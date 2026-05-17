@@ -30,9 +30,7 @@
   }
 
   *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
-
   html { scroll-behavior: smooth; }
-
   body {
     font-family: 'DM Sans', sans-serif;
     background: var(--cream);
@@ -366,9 +364,7 @@
     transition: box-shadow 0.25s;
   }
   .chart-card:hover { box-shadow: var(--card-shadow-hover); }
-  .chart-card.full-width {
-    grid-column: 1 / -1;
-  }
+  .chart-card.full-width { grid-column: 1 / -1; }
   .chart-title {
     font-family: 'Playfair Display', serif;
     font-size: 1.05rem;
@@ -381,9 +377,7 @@
     color: var(--text-light);
     margin-bottom: 1.5rem;
   }
-  .chart-container {
-    position: relative;
-  }
+  .chart-container { position: relative; }
 
   /* TABLE */
   .table-section { background: var(--cream); scroll-margin-top: 100px; }
@@ -491,10 +485,7 @@
     font-weight: 700;
     width: 40px;
   }
-  .row-top .td-rank {
-    color: var(--gold-dim);
-    font-weight: 700;
-  }
+  .row-top .td-rank { color: var(--gold-dim); font-weight: 700; }
   .td-ticker {
     font-family: 'DM Mono', monospace;
     font-weight: 500;
@@ -536,14 +527,14 @@
     border-radius: 4px;
     white-space: nowrap;
   }
-  .badge-cef { background: #EBF5FB; color: #2471A3; }
-  .badge-bdc { background: #EAFAF1; color: #1E8449; }
-  .badge-etf { background: #FEF9E7; color: #B7950B; }
-  .badge-cc  { background: #FDF2F8; color: #7D3C98; }
-  .badge-pref{ background: #FFF3E0; color: #E65100; }
+  .badge-cef  { background: #EBF5FB; color: #2471A3; }
+  .badge-bdc  { background: #EAFAF1; color: #1E8449; }
+  .badge-etf  { background: #FEF9E7; color: #B7950B; }
+  .badge-cc   { background: #FDF2F8; color: #7D3C98; }
+  .badge-pref { background: #FFF3E0; color: #E65100; }
   .badge-infra{ background: #E8F5E9; color: #2E7D32; }
-  .badge-bond{ background: #F3E5F5; color: #6A1B9A; }
-  .badge-alt { background: #E0F7FA; color: #00696F; }
+  .badge-bond { background: #F3E5F5; color: #6A1B9A; }
+  .badge-alt  { background: #E0F7FA; color: #00696F; }
   .yt-btn {
     display: inline-flex;
     align-items: center;
@@ -560,8 +551,8 @@
   }
   .yt-btn:hover { opacity: 0.85; }
   .yield-high { color: #C0392B; }
-  .yield-med { color: #E67E22; }
-  .yield-low { color: var(--green); }
+  .yield-med  { color: #E67E22; }
+  .yield-low  { color: var(--green); }
   .row-top { background: rgba(201,168,76,0.04); }
 
   /* ANALYSIS */
@@ -581,10 +572,7 @@
     transition: background 0.2s;
   }
   .analysis-card:hover { background: rgba(255,255,255,0.08); }
-  .analysis-card-icon {
-    font-size: 1.5rem;
-    margin-bottom: 0.8rem;
-  }
+  .analysis-card-icon { font-size: 1.5rem; margin-bottom: 0.8rem; }
   .analysis-card h3 {
     font-family: 'Playfair Display', serif;
     font-size: 1.05rem;
@@ -596,52 +584,6 @@
     font-size: 0.86rem;
     color: rgba(255,255,255,0.68);
     line-height: 1.7;
-  }
-
-  /* VIDEOS */
-  .videos-section { background: var(--cream); }
-  .videos-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
-    gap: 1rem;
-  }
-  .video-card {
-    background: var(--white);
-    border: 1px solid var(--border);
-    border-radius: 10px;
-    padding: 1.1rem;
-    text-decoration: none;
-    color: inherit;
-    transition: all 0.25s;
-    display: flex;
-    flex-direction: column;
-    gap: 0.5rem;
-  }
-  .video-card:hover {
-    transform: translateY(-2px);
-    box-shadow: var(--card-shadow-hover);
-    border-color: rgba(255,0,0,0.2);
-  }
-  .video-ticker {
-    font-family: 'DM Mono', monospace;
-    font-size: 1rem;
-    font-weight: 500;
-    color: var(--charcoal);
-  }
-  .video-name {
-    font-size: 0.75rem;
-    color: var(--text-light);
-    line-height: 1.4;
-    flex: 1;
-  }
-  .video-link-label {
-    display: inline-flex;
-    align-items: center;
-    gap: 0.3rem;
-    font-size: 0.7rem;
-    font-weight: 600;
-    color: #FF0000;
-    margin-top: 0.3rem;
   }
 
   /* FOOTER */
@@ -665,7 +607,7 @@
   /* ANIMATIONS */
   @keyframes fadeUp {
     from { opacity: 0; transform: translateY(20px); }
-    to { opacity: 1; transform: translateY(0); }
+    to   { opacity: 1; transform: translateY(0); }
   }
   .fade-up { animation: fadeUp 0.6s ease forwards; }
   .fade-up-delay-1 { animation-delay: 0.1s; opacity: 0; }
@@ -681,29 +623,6 @@
     .charts-grid { grid-template-columns: 1fr; }
     .chart-card.full-width { grid-column: auto; }
   }
-
-  /* QUADRANT CHART */
-  .quadrant-wrap {
-    position: relative;
-    height: 340px;
-    background: var(--cream-dark);
-    border-radius: 8px;
-    overflow: hidden;
-  }
-  .quadrant-label {
-    position: absolute;
-    font-size: 0.65rem;
-    font-weight: 700;
-    letter-spacing: 0.06em;
-    text-transform: uppercase;
-    padding: 0.3rem 0.6rem;
-    border-radius: 4px;
-    opacity: 0.7;
-  }
-  .q-tl { top: 10px; left: 10px; background: #EAFAF1; color: #1E8449; }
-  .q-tr { top: 10px; right: 10px; background: #FEF9E7; color: #B7950B; }
-  .q-bl { bottom: 10px; left: 10px; background: #FFF3E0; color: #E65100; }
-  .q-br { bottom: 10px; right: 10px; background: #FDEDEC; color: #C0392B; }
 
   .table-legend {
     display: flex;
@@ -733,7 +652,6 @@
     <li><a href="#charts">Charts</a></li>
     <li><a href="#table">Table</a></li>
     <li><a href="#analysis">Analysis</a></li>
-    <li><a href="#videos">Videos</a></li>
   </ul>
 </nav>
 
@@ -788,66 +706,16 @@
       <p class="section-subtitle">Key metrics derived from the April 19, 2026 snapshot</p>
     </div>
     <div class="cards-grid">
-      <div class="card">
-        <div class="card-icon">📈</div>
-        <div class="card-label">Weighted Avg Yield</div>
-        <div class="card-value">11.10%</div>
-        <div class="card-sub">Excl. special distributions</div>
-      </div>
-      <div class="card">
-        <div class="card-icon">🗂️</div>
-        <div class="card-label">Total Holdings</div>
-        <div class="card-value">36</div>
-        <div class="card-sub">Unique tickers</div>
-      </div>
-      <div class="card">
-        <div class="card-icon">🏆</div>
-        <div class="card-label">Largest Holding</div>
-        <div class="card-value">CEFS</div>
-        <div class="card-sub">5.81% of portfolio</div>
-      </div>
-      <div class="card">
-        <div class="card-icon">⚡</div>
-        <div class="card-label">Highest Yield</div>
-        <div class="card-value">MSTY</div>
-        <div class="card-sub">61.03% yield</div>
-      </div>
-      <div class="card">
-        <div class="card-icon">🎯</div>
-        <div class="card-label">Avg Position Size</div>
-        <div class="card-value">2.78%</div>
-        <div class="card-sub">Median: 2.10%</div>
-      </div>
-      <div class="card">
-        <div class="card-icon">📊</div>
-        <div class="card-label">Asset Classes</div>
-        <div class="card-value">10+</div>
-        <div class="card-sub">Diversified income streams</div>
-      </div>
-      <div class="card">
-        <div class="card-icon">🔄</div>
-        <div class="card-label">Covered Call ETFs</div>
-        <div class="card-value">~34%</div>
-        <div class="card-sub">GPIX, QQQI, SPYI, KGLD, NIHI…</div>
-      </div>
-      <div class="card">
-        <div class="card-icon">🏦</div>
-        <div class="card-label">BDC Exposure</div>
-        <div class="card-value">~17%</div>
-        <div class="card-sub">PBDC, ARCC, BXSL, MAIN…</div>
-      </div>
-      <div class="card">
-        <div class="card-icon">💎</div>
-        <div class="card-label">CEF Exposure</div>
-        <div class="card-value">~21%</div>
-        <div class="card-sub">CEFS, RLTY, UTF, ADX…</div>
-      </div>
-      <div class="card">
-        <div class="card-icon">🌐</div>
-        <div class="card-label">International Income</div>
-        <div class="card-value">~10%</div>
-        <div class="card-sub">IDVO, NIHI exposure</div>
-      </div>
+      <div class="card"><div class="card-icon">📈</div><div class="card-label">Weighted Avg Yield</div><div class="card-value">11.10%</div><div class="card-sub">Excl. special distributions</div></div>
+      <div class="card"><div class="card-icon">🗂️</div><div class="card-label">Total Holdings</div><div class="card-value">36</div><div class="card-sub">Unique tickers</div></div>
+      <div class="card"><div class="card-icon">🏆</div><div class="card-label">Largest Holding</div><div class="card-value">CEFS</div><div class="card-sub">5.81% of portfolio</div></div>
+      <div class="card"><div class="card-icon">⚡</div><div class="card-label">Highest Yield</div><div class="card-value">MSTY</div><div class="card-sub">61.03% yield</div></div>
+      <div class="card"><div class="card-icon">🎯</div><div class="card-label">Avg Position Size</div><div class="card-value">2.78%</div><div class="card-sub">Median: 2.10%</div></div>
+      <div class="card"><div class="card-icon">📊</div><div class="card-label">Asset Classes</div><div class="card-value">10+</div><div class="card-sub">Diversified income streams</div></div>
+      <div class="card"><div class="card-icon">🔄</div><div class="card-label">Covered Call ETFs</div><div class="card-value">~34%</div><div class="card-sub">GPIX, QQQI, SPYI, KGLD, NIHI…</div></div>
+      <div class="card"><div class="card-icon">🏦</div><div class="card-label">BDC Exposure</div><div class="card-value">~17%</div><div class="card-sub">PBDC, ARCC, BXSL, MAIN…</div></div>
+      <div class="card"><div class="card-icon">💎</div><div class="card-label">CEF Exposure</div><div class="card-value">~21%</div><div class="card-sub">CEFS, RLTY, UTF, ADX…</div></div>
+      <div class="card"><div class="card-icon">🌐</div><div class="card-label">International Income</div><div class="card-value">~10%</div><div class="card-sub">IDVO, NIHI exposure</div></div>
     </div>
   </div>
 </section>
@@ -892,13 +760,6 @@
         <div class="chart-desc">Horizontal bar — largest positions by portfolio weight</div>
         <div class="chart-container" style="height:340px">
           <canvas id="barChart"></canvas>
-        </div>
-      </div>
-      <div class="chart-card full-width">
-        <div class="chart-title">Yield vs. Allocation — Bubble Chart</div>
-        <div class="chart-desc">Each bubble represents a holding; size reflects allocation weight</div>
-        <div class="chart-container" style="height:340px">
-          <canvas id="bubbleChart"></canvas>
         </div>
       </div>
     </div>
@@ -994,18 +855,6 @@
   </div>
 </section>
 
-<!-- VIDEOS -->
-<section class="videos-section" id="videos">
-  <div class="section-inner">
-    <div class="section-header">
-      <div class="section-tag">Research Library</div>
-      <h2 class="section-title">Portfolio Research Videos</h2>
-      <p class="section-subtitle">Individual deep-dive video research for each position</p>
-    </div>
-    <div class="videos-grid" id="videosGrid"></div>
-  </div>
-</section>
-
 <!-- FOOTER -->
 <footer>
   <div><strong>Armchair Insider Portfolio</strong> — April 19, 2026 Snapshot</div>
@@ -1017,7 +866,6 @@
 </footer>
 
 <script>
-// ── DATA ──────────────────────────────────────────────────────────────────────
 const portfolio = [
   { rank:1,  ticker:"CEFS",  name:"Saba Closed-End Funds ETF",                           yield:7.47,  alloc:5.81, type:"CEF",    badge:"badge-cef",  url:"https://youtu.be/DZO0T3UcErU" },
   { rank:2,  ticker:"GPIX",  name:"Goldman Sachs S&P 500 Premium Income ETF",            yield:8.08,  alloc:5.30, type:"CC ETF",  badge:"badge-cc",   url:"https://youtu.be/sSAwBleSxh4" },
@@ -1068,10 +916,9 @@ const topHoldingNotes = {
   ARCC: "One of the largest BDCs, Ares Capital deploys senior secured loans and other credit instruments to middle-market companies, distributing interest income.",
 };
 
-// ── TOP HOLDINGS GRID ─────────────────────────────────────────────────────────
+// TOP HOLDINGS GRID
 const holdingsGrid = document.getElementById("holdingsGrid");
-const topTickers = ["CEFS","GPIX","QQQI","PFFA","IDVO","NIHI","PBDC","ARCC"];
-topTickers.forEach(ticker => {
+["CEFS","GPIX","QQQI","PFFA","IDVO","NIHI","PBDC","ARCC"].forEach(ticker => {
   const d = portfolio.find(p => p.ticker === ticker);
   if (!d) return;
   const card = document.createElement("div");
@@ -1097,7 +944,7 @@ topTickers.forEach(ticker => {
   holdingsGrid.appendChild(card);
 });
 
-// ── TABLE ─────────────────────────────────────────────────────────────────────
+// TABLE
 let filteredData = [...portfolio];
 let sortCol = 0;
 let sortAsc = true;
@@ -1112,10 +959,9 @@ function yieldClass(y) {
 function renderTable(data) {
   const tbody = document.getElementById("tableBody");
   tbody.innerHTML = "";
-  data.forEach((d, i) => {
-    const isTop = d.rank <= 10;
+  data.forEach(d => {
     const tr = document.createElement("tr");
-    if (isTop) tr.classList.add("row-top");
+    if (d.rank <= 10) tr.classList.add("row-top");
     const barW = Math.round((d.alloc / 5.81) * 70);
     tr.innerHTML = `
       <td class="td-rank">${d.rank}</td>
@@ -1140,9 +986,9 @@ function applyFilters() {
   const q = document.getElementById("searchInput").value.toLowerCase();
   if (q) data = data.filter(d => d.ticker.toLowerCase().includes(q) || d.name.toLowerCase().includes(q));
   if (activeFilter === "high-yield") data = data.filter(d => d.yield > 15);
-  if (activeFilter === "top5") data = data.filter(d => d.rank <= 5);
-  if (activeFilter === "bdc") data = data.filter(d => d.type === "BDC");
-  if (activeFilter === "cc") data = data.filter(d => d.type === "CC ETF");
+  if (activeFilter === "top5")       data = data.filter(d => d.rank <= 5);
+  if (activeFilter === "bdc")        data = data.filter(d => d.type === "BDC");
+  if (activeFilter === "cc")         data = data.filter(d => d.type === "CC ETF");
   filteredData = data;
   renderTable(data);
 }
@@ -1163,82 +1009,43 @@ function sortTable(col) {
   const keys = ["rank","ticker","name","yield","alloc"];
   filteredData.sort((a,b) => {
     let va = a[keys[col]], vb = b[keys[col]];
-    if (typeof va === "string") va = va.toLowerCase(), vb = vb.toLowerCase();
+    if (typeof va === "string") { va = va.toLowerCase(); vb = vb.toLowerCase(); }
     return sortAsc ? (va > vb ? 1 : -1) : (va < vb ? 1 : -1);
   });
   document.querySelectorAll("th").forEach((th,i) => {
     th.classList.toggle("sorted", i === col);
     const arr = th.querySelector(".sort-arrow");
-    if (arr && i === col) arr.textContent = sortAsc ? " ↑" : " ↓";
-    else if (arr) arr.textContent = " ↕";
+    if (arr) arr.textContent = i === col ? (sortAsc ? " ↑" : " ↓") : " ↕";
   });
   renderTable(filteredData);
 }
 
 renderTable(portfolio);
 
-// ── VIDEOS GRID ───────────────────────────────────────────────────────────────
-const videosGrid = document.getElementById("videosGrid");
-// Deduplicate by url
-const seen = new Set();
-portfolio.forEach(d => {
-  const card = document.createElement("a");
-  card.className = "video-card";
-  card.href = d.url;
-  card.target = "_blank";
-  card.rel = "noopener";
-  card.innerHTML = `
-    <div class="video-ticker">${d.ticker}</div>
-    <div class="video-name">${d.name}</div>
-    <div class="video-link-label">▶ YouTube Research</div>
-  `;
-  videosGrid.appendChild(card);
-});
-
-// ── CHARTS ────────────────────────────────────────────────────────────────────
+// CHARTS
 const GOLD = "#C9A84C";
-const GOLD2 = "#E8C97A";
-const CHARCOAL = "#1C1C1E";
-const colors = [
-  "#C9A84C","#2471A3","#2D9E6B","#7D3C98","#E65100",
-  "#00696F","#2E7D32","#1565C0","#B71C1C","#F57F17",
-];
+const colors = ["#C9A84C","#2471A3","#2D9E6B","#7D3C98","#E65100","#00696F","#2E7D32","#1565C0","#B71C1C","#F57F17"];
 
-// 1. DONUT — Asset Class Distribution
-const assetClasses = {
-  "Covered Call ETFs": 0,
-  "BDCs": 0,
-  "CEFs": 0,
-  "Preferreds": 0,
-  "International": 0,
-  "Infrastructure": 0,
-  "Credit / Bonds": 0,
-  "Alternatives": 0,
-};
+// 1. DONUT
+const assetClasses = { "Covered Call ETFs":0, "BDCs":0, "CEFs":0, "Preferreds":0, "International":0, "Infrastructure":0, "Credit / Bonds":0, "Alternatives":0 };
 portfolio.forEach(d => {
-  if (d.type === "CC ETF") assetClasses["Covered Call ETFs"] += d.alloc;
-  else if (d.type === "BDC") assetClasses["BDCs"] += d.alloc;
-  else if (d.type === "CEF") assetClasses["CEFs"] += d.alloc;
-  else if (d.type === "Pref.") assetClasses["Preferreds"] += d.alloc;
-  else if (d.type === "Intl ETF") assetClasses["International"] += d.alloc;
-  else if (d.type === "Infra.") assetClasses["Infrastructure"] += d.alloc;
-  else if (d.type === "Bond" || d.type === "Credit") assetClasses["Credit / Bonds"] += d.alloc;
-  else if (d.type === "Alt.") assetClasses["Alternatives"] += d.alloc;
+  if      (d.type === "CC ETF")                  assetClasses["Covered Call ETFs"] += d.alloc;
+  else if (d.type === "BDC")                     assetClasses["BDCs"]              += d.alloc;
+  else if (d.type === "CEF")                     assetClasses["CEFs"]              += d.alloc;
+  else if (d.type === "Pref.")                   assetClasses["Preferreds"]        += d.alloc;
+  else if (d.type === "Intl ETF")                assetClasses["International"]     += d.alloc;
+  else if (d.type === "Infra.")                  assetClasses["Infrastructure"]    += d.alloc;
+  else if (d.type === "Bond" || d.type==="Credit") assetClasses["Credit / Bonds"] += d.alloc;
+  else if (d.type === "Alt.")                    assetClasses["Alternatives"]      += d.alloc;
 });
 new Chart(document.getElementById("donutChart"), {
   type: "doughnut",
   data: {
     labels: Object.keys(assetClasses),
-    datasets: [{
-      data: Object.values(assetClasses).map(v => +v.toFixed(2)),
-      backgroundColor: colors,
-      borderColor: "#FAF8F3",
-      borderWidth: 3,
-    }]
+    datasets: [{ data: Object.values(assetClasses).map(v => +v.toFixed(2)), backgroundColor: colors, borderColor: "#FAF8F3", borderWidth: 3 }]
   },
   options: {
-    responsive: true,
-    maintainAspectRatio: false,
+    responsive: true, maintainAspectRatio: false,
     plugins: {
       legend: { position: "right", labels: { font: { family: "DM Sans", size: 11 }, boxWidth: 14, padding: 12 } },
       tooltip: { callbacks: { label: ctx => ` ${ctx.label}: ${ctx.parsed.toFixed(1)}%` } }
@@ -1249,28 +1056,20 @@ new Chart(document.getElementById("donutChart"), {
 
 // 2. YIELD HISTOGRAM
 const bins = [
-  { label: "< 8%",   min: 0,   max: 8   },
-  { label: "8–12%",  min: 8,   max: 12  },
-  { label: "12–16%", min: 12,  max: 16  },
-  { label: "16–25%", min: 16,  max: 25  },
-  { label: "> 25%",  min: 25,  max: 999 },
+  { label:"< 8%",   min:0,  max:8   },
+  { label:"8–12%",  min:8,  max:12  },
+  { label:"12–16%", min:12, max:16  },
+  { label:"16–25%", min:16, max:25  },
+  { label:"> 25%",  min:25, max:999 },
 ];
-const histCounts = bins.map(b => portfolio.filter(d => d.yield >= b.min && d.yield < b.max).length);
 new Chart(document.getElementById("yieldHistogram"), {
   type: "bar",
   data: {
     labels: bins.map(b => b.label),
-    datasets: [{
-      label: "# of Holdings",
-      data: histCounts,
-      backgroundColor: ["#2D9E6B","#C9A84C","#E67E22","#C0392B","#7D3C98"],
-      borderRadius: 6,
-      borderSkipped: false,
-    }]
+    datasets: [{ label:"# of Holdings", data: bins.map(b => portfolio.filter(d => d.yield >= b.min && d.yield < b.max).length), backgroundColor:["#2D9E6B","#C9A84C","#E67E22","#C0392B","#7D3C98"], borderRadius:6, borderSkipped:false }]
   },
   options: {
-    responsive: true,
-    maintainAspectRatio: false,
+    responsive: true, maintainAspectRatio: false,
     plugins: { legend: { display: false } },
     scales: {
       x: { grid: { display: false }, ticks: { font: { family: "DM Sans", size: 11 } } },
@@ -1285,18 +1084,11 @@ new Chart(document.getElementById("barChart"), {
   type: "bar",
   data: {
     labels: top15.map(d => d.ticker),
-    datasets: [{
-      label: "Portfolio %",
-      data: top15.map(d => d.alloc),
-      backgroundColor: top15.map((d,i) => i < 5 ? GOLD : "rgba(201,168,76,0.45)"),
-      borderRadius: 5,
-      borderSkipped: false,
-    }]
+    datasets: [{ label:"Portfolio %", data: top15.map(d => d.alloc), backgroundColor: top15.map((_,i) => i < 5 ? GOLD : "rgba(201,168,76,0.45)"), borderRadius: 5, borderSkipped: false }]
   },
   options: {
     indexAxis: "y",
-    responsive: true,
-    maintainAspectRatio: false,
+    responsive: true, maintainAspectRatio: false,
     plugins: {
       legend: { display: false },
       tooltip: { callbacks: { label: ctx => ` ${ctx.parsed.x.toFixed(2)}% of portfolio` } }
@@ -1304,51 +1096,6 @@ new Chart(document.getElementById("barChart"), {
     scales: {
       x: { grid: { color: "rgba(0,0,0,0.05)" }, ticks: { callback: v => v + "%", font: { family: "DM Mono", size: 11 } } },
       y: { grid: { display: false }, ticks: { font: { family: "DM Mono", size: 11 } } }
-    }
-  }
-});
-
-// 4. BUBBLE CHART
-const bubbleDatasets = portfolio.map(d => ({
-  label: d.ticker,
-  data: [{
-    x: d.alloc,
-    y: d.yield,
-    r: Math.sqrt(d.alloc) * 5.5,
-  }],
-  backgroundColor: d.yield >= 20 ? "rgba(192,57,43,0.6)" : d.yield >= 10 ? "rgba(201,168,76,0.6)" : "rgba(45,158,107,0.6)",
-  borderColor: "rgba(255,255,255,0.7)",
-  borderWidth: 1,
-}));
-
-new Chart(document.getElementById("bubbleChart"), {
-  type: "bubble",
-  data: { datasets: bubbleDatasets },
-  options: {
-    responsive: true,
-    maintainAspectRatio: false,
-    plugins: {
-      legend: { display: false },
-      tooltip: {
-        callbacks: {
-          label: ctx => {
-            const d = portfolio[ctx.datasetIndex];
-            return ` ${d.ticker}: ${d.yield}% yield | ${d.alloc}% alloc`;
-          }
-        }
-      }
-    },
-    scales: {
-      x: {
-        title: { display: true, text: "Portfolio Allocation (%)", font: { family: "DM Sans", size: 11 } },
-        grid: { color: "rgba(0,0,0,0.05)" },
-        ticks: { callback: v => v + "%", font: { family: "DM Mono", size: 10 } }
-      },
-      y: {
-        title: { display: true, text: "Yield (%)", font: { family: "DM Sans", size: 11 } },
-        grid: { color: "rgba(0,0,0,0.05)" },
-        ticks: { callback: v => v + "%", font: { family: "DM Mono", size: 10 } }
-      }
     }
   }
 });
